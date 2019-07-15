@@ -15,8 +15,8 @@ __Saídas:__
 
 __Exemplo:__
 ##### Entrada:
-- Rumo da pista: 90°
-- Circuito: padrão
+	Rumo da pista: 90°
+	Circuito: padrão
 ##### Processamento:
 	Perna do vento: 90° + 180° = 270°
 	Rumo de entrada perna do vento: 270° - 45° = 225°
