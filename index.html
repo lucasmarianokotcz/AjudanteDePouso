@@ -14,16 +14,18 @@
         <label for="rumoPista">Rumo da pista:</label>
         <input type="number" name="rumoPista" id="rumoPista" min="1" max="360" onchange="calculaTudo()">°
         <div id="circuitos">
-            <input type="radio" name="circuito" id="circuitoPadrao" checked> <label for="circuitoPadrao">Padrão</label>
-            <input type="radio" name="circuito" id="circuitoNaoPadrao"> <label
+            <input type="radio" name="circuito" id="circuitoPadrao" checked onclick="calculaTudo()"> <label
+                for="circuitoPadrao">Padrão</label>
+            <input type="radio" name="circuito" id="circuitoNaoPadrao" onclick="calculaTudo()"> <label
                 for="circuitoNaoPadrao">Não-padrão</label>
         </div>
     </div>
     <hr>
     <div id="saida">
-        <p>O rumo da perna do vento é: <span id="pernaDoVento"></span>°.</p>
-        <p>O rumo de entrada da perna do vento é: xxx°.</p>
-        <p>Em relação a pista, a aeronave precisa vir do -cardeal-, numa radial de xxx°.</p>
+        <p>O rumo da perna do vento é: <span id="pernaDoVento"></span></p>
+        <p>O rumo de entrada da perna do vento é: <span id="rumoEntrada"></span></p>
+        <p>Em relação a pista, a aeronave precisa vir do <span id="cardeal"></span>, numa radial de <span
+                id="radial"></span></p>
     </div>
     <script src="js/script.js"></script>
 </body>
