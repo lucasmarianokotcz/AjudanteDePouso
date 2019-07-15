@@ -13,8 +13,11 @@
     <div id="entrada">
         <label for="rumoPista">Rumo da pista:</label>
         <input type="number" name="rumoPista" id="rumoPista" min="1" max="360" onchange="calculaTudo()">°
-        <input type="radio" name="circuito" id="circuitoPadrao" checked> <label for="circuitoPadrao">Padrão</label>
-        <input type="radio" name="circuito" id="circuitoNaoPadrao"> <label for="circuitoNaoPadrao">Não-padrão</label>
+        <div id="circuitos">
+            <input type="radio" name="circuito" id="circuitoPadrao" checked> <label for="circuitoPadrao">Padrão</label>
+            <input type="radio" name="circuito" id="circuitoNaoPadrao"> <label
+                for="circuitoNaoPadrao">Não-padrão</label>
+        </div>
     </div>
     <hr>
     <div id="saida" style="margin-top: 30px;">
