@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajudante de pouso</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="entrada">
+        <label for="rumoPista">Rumo da pista:</label>
+        <input type="number" name="rumoPista" id="rumoPista" min="1" max="360" onchange="calculaTudo()">°
+        <input type="radio" name="circuito" id="circuitoPadrao" checked> <label for="circuitoPadrao">Padrão</label>
+        <input type="radio" name="circuito" id="circuitoNaoPadrao"> <label for="circuitoNaoPadrao">Não-padrão</label>
+    </div>
+    <hr>
+    <div id="saida" style="margin-top: 30px;">
+        <p>O rumo da perna do vento é: <span id="pernaDoVento"></span>°.</p>
+        <p>O rumo de entrada da perna do vento é: xxx°.</p>
+        <p>Em relação a pista, a aeronave precisa vir do -cardeal-, numa radial de xxx°.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
